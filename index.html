@@ -4,514 +4,299 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Saif Damra | Data Scientist & AI Engineer</title>
+    <title>Saif Damra | AI Engineer & Data Scientist</title>
     <meta name="description"
-        content="Portfolio of Saif Damra | Experienced AI Engineer and Data Scientist specializing in Machine Learning, NLP, Computer Vision, and Business Intelligence.">
-    <meta name="keywords" content="Saif Damra, Data Scientist, AI Engineer, Machine Learning, NLP, Portfolio">
+        content="Saif Damra is an AI Engineer and Data Scientist building production AI systems, automation workflows, and decision-ready analytics.">
+    <meta name="keywords" content="Saif Damra, AI Engineer, Data Scientist, Machine Learning, NLP, Computer Vision, Power BI, Jordan">
     <meta name="author" content="Saif Damra">
+    <meta name="theme-color" content="#0d0e0e">
 
-    <!-- Open Graph -->
-    <meta property="og:title" content="Saif Damra | Data Scientist & AI Engineer">
-    <meta property="og:description"
-        content="Experienced AI Engineer and Data Scientist specializing in ML, NLP, Computer Vision, and BI.">
+    <meta property="og:title" content="Saif Damra | AI Engineer & Data Scientist">
+    <meta property="og:description" content="From raw signals to intelligent systems that create measurable impact.">
     <meta property="og:type" content="website">
+    <meta property="og:image" content="assets/hero-ai-system.png">
 
-    <!-- Google Fonts -->
+    <script>document.documentElement.classList.add('js');</script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;500;600;700;800&display=swap"
-        rel="stylesheet">
-
-    <!-- Font Awesome -->
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <!-- Particles Background -->
-    <canvas id="particles"></canvas>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <div class="scroll-progress" id="scroll-progress" aria-hidden="true"></div>
 
-    <!-- Navigation -->
-    <nav class="navbar" id="navbar">
-        <div class="nav-container">
-            <ul class="nav-menu" id="nav-menu">
-                <li><a href="#about" class="nav-link">About</a></li>
-                <li><a href="#experience" class="nav-link">Experience</a></li>
-                <li><a href="#projects" class="nav-link">Projects</a></li>
-                <li><a href="#skills" class="nav-link">Skills</a></li>
-                <li><a href="#education" class="nav-link">Education</a></li>
-                <li><a href="#certificates" class="nav-link">Certificates</a></li>
-                <li><a href="#contact" class="nav-link">Contact</a></li>
-            </ul>
-            <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu">
-                <span></span>
-                <span></span>
-                <span></span>
+    <header class="site-header" id="site-header">
+        <nav class="nav-shell" aria-label="Main navigation">
+            <a class="brand" href="#home" aria-label="Saif Damra, home">
+                <span class="brand-mark">SD</span>
+                <span class="brand-name">Saif Damra</span>
+            </a>
+
+            <button class="menu-toggle" id="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-menu" aria-label="Open navigation">
+                <span></span><span></span>
             </button>
-        </div>
-    </nav>
 
-    <!-- Hero Section -->
-    <section class="hero" id="hero">
-        <div class="hero-content">
-            <p class="hero-greeting">Hi, my name is</p>
-            <h1 class="hero-name">Saif Damra.</h1>
-            <h2 class="hero-tagline">I build <span class="typed-text" id="typed-text"></span><span
-                    class="cursor">|</span></h2>
-            <p class="hero-description">
-                Experienced AI Engineer & Data Scientist specializing in Machine Learning, NLP, and Computer Vision.
-                I bridge the gap between technical complexity and business value, turning data into impact.
-            </p>
-            <div class="hero-cta">
-                <a href="#contact" class="btn btn-primary">Get In Touch</a>
-                <a href="#projects" class="btn btn-outline">View My Work</a>
+            <div class="nav-menu" id="nav-menu">
+                <a class="nav-link" href="#work">Work</a>
+                <a class="nav-link" href="#experience">Experience</a>
+                <a class="nav-link" href="#expertise">Expertise</a>
+                <a class="nav-link" href="#about">About</a>
+                <a class="nav-contact" href="#contact">Let's talk <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
             </div>
-            <div class="hero-socials">
-                <a href="https://github.com/Saif-Damra" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i
-                        class="fa-brands fa-github"></i></a>
-                <a href="https://www.linkedin.com/in/saifdamra/" target="_blank" rel="noopener noreferrer"
-                    aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
-                <a href="mailto:saif.damra@outlook.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
-            </div>
-        </div>
-        <div class="scroll-indicator">
-            <div class="mouse">
-                <div class="wheel"></div>
-            </div>
-            <p>Scroll Down</p>
-        </div>
-    </section>
+        </nav>
+    </header>
 
-    <!-- About Section -->
-    <section class="section" id="about">
-        <div class="container">
-            <h2 class="section-title reveal"><span class="title-number">01.</span> About Me</h2>
-            <div class="about-content reveal">
-                <div class="about-text">
-                    <p>
-                        I'm an experienced <strong>AI Engineer</strong> and <strong>Data Scientist</strong> with a B.Sc.
-                        in Data Science and AI
-                        from Al Hussein Technical University. I combine hands-on expertise in <strong>Machine
-                            Learning</strong>,
-                        <strong>NLP</strong>, and <strong>Computer Vision</strong> (PyTorch, scikit-learn) with a strong
-                        background as an AI Instructor.
-                    </p>
-                    <p>
-                        This dual experience allows me to not only build complex AI-driven solutions and automation
-                        workflows
-                        but also bridge the gap between technical complexity and business value. Certified in
-                        <strong>AWS (AI Practitioner)</strong>, <strong>Nutanix (NCA 6.10)</strong>, and <strong>Deep
-                            Learning</strong>,
-                        I bring a unique ability to develop robust technical architectures while effectively
-                        communicating
-                        insights through advanced data visualization (<strong>Power BI</strong>).
-                    </p>
-                    <div class="about-highlights">
-                        <div class="highlight-item">
-                            <div class="highlight-number">120+</div>
-                            <div class="highlight-label">Learners Trained</div>
-                        </div>
-                        <div class="highlight-item">
-                            <div class="highlight-number">150+</div>
-                            <div class="highlight-label">Hours Delivered</div>
-                        </div>
-                        <div class="highlight-item">
-                            <div class="highlight-number">7</div>
-                            <div class="highlight-label">Professional Certifications</div>
-                        </div>
+    <main id="main-content">
+        <section class="hero" id="home" aria-labelledby="hero-title">
+            <div class="hero-media" aria-hidden="true"></div>
+            <div class="hero-shade" aria-hidden="true"></div>
+            <div class="hero-shell">
+                <div class="hero-copy">
+                    <p class="eyebrow hero-eyebrow"><span class="status-dot"></span> AI Engineer &bull; Data Scientist &bull; Amman, Jordan</p>
+                    <h1 id="hero-title">Saif<br>Damra</h1>
+                    <p class="hero-statement">I turn raw signals into <strong>intelligent systems</strong> that work in the real world.</p>
+                    <div class="hero-actions">
+                        <a class="button button-primary" href="#work">Explore selected work <i class="fa-solid fa-arrow-down" aria-hidden="true"></i></a>
+                        <a class="text-link text-link-light" href="mailto:saif.damra@outlook.com">saif.damra@outlook.com <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+
+                <div class="hero-proof" aria-label="Career highlights">
+                    <div><strong>120+</strong><span>Learners trained</span></div>
+                    <div><strong>150+</strong><span>Hours delivered</span></div>
+                    <div><strong>7</strong><span>Professional certifications</span></div>
+                </div>
+            </div>
+        </section>
+
+        <div class="capability-strip" aria-label="Core capabilities">
+            <div class="capability-track">
+                <span>Machine Learning</span><i></i><span>AI Automation</span><i></i><span>Natural Language Processing</span><i></i><span>Computer Vision</span><i></i><span>Business Intelligence</span><i></i><span>Technical Training</span>
+            </div>
+        </div>
+
+        <section class="intro section" id="about">
+            <div class="section-shell intro-grid">
+                <div class="section-kicker reveal">
+                    <span>01</span>
+                    <p>What I bring</p>
+                </div>
+                <div class="intro-content">
+                    <h2 class="display-heading reveal">I work where models, automation, and decisions meet.</h2>
+                    <div class="intro-columns reveal">
+                        <p>I am an AI Engineer and Data Scientist with a B.Sc. in Data Science and Artificial Intelligence from Al Hussein Technical University. I design solutions across machine learning, NLP, computer vision, analytics, and workflow automation.</p>
+                        <p>My edge is range with depth: I can architect the technical system, connect it to business operations, communicate the insight clearly, and help teams build the capability to own it.</p>
+                    </div>
+                    <div class="value-grid reveal">
+                        <article>
+                            <span class="value-number">A</span>
+                            <h3>Build for reality</h3>
+                            <p>Production-minded systems shaped around real users, constraints, and outcomes.</p>
+                        </article>
+                        <article>
+                            <span class="value-number">B</span>
+                            <h3>Connect the stack</h3>
+                            <p>Models, APIs, workflows, dashboards, and deployment working as one system.</p>
+                        </article>
+                        <article>
+                            <span class="value-number">C</span>
+                            <h3>Make it understood</h3>
+                            <p>Clear technical communication that turns complexity into confident decisions.</p>
+                        </article>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Experience Section -->
-    <section class="section" id="experience">
-        <div class="container">
-            <h2 class="section-title reveal"><span class="title-number">02.</span> Experience</h2>
-            <div class="timeline">
-                <!-- Experience 1 -->
-                <div class="timeline-item reveal">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <div class="timeline-header">
-                            <h3>Data Analyst & BI Specialist</h3>
-                            <span class="timeline-company">CoderZ for Software and Training</span>
-                            <span class="timeline-meta"><i class="fa-solid fa-location-dot"></i> Amman, Jordan &bull;
-                                Aug 2025 &ndash; Present</span>
-                        </div>
-                        <ul class="timeline-details">
-                            <li>Developed a custom real-time attendance tracking system using <strong>n8n</strong> and
-                                <strong>self-hosted VPS</strong>, automating administrative tasks and reducing manual
-                                data entry by 100%.
-                            </li>
-                            <li>Engineered automated reporting pipelines using <strong>Microsoft Power
-                                    Automate</strong>, replacing manual distribution with streamlined workflows.</li>
-                            <li>Designed interactive <strong>Power BI</strong> dashboards utilizing advanced
-                                <strong>DAX</strong> and data modeling to translate raw business data into actionable
-                                insights.
-                            </li>
-                            <li>Managed end-to-end data analysis processes, ensuring high data quality and distinct
-                                reporting accuracy.</li>
-                        </ul>
+        <section class="work section" id="work">
+            <div class="section-shell">
+                <div class="section-heading-row reveal">
+                    <div class="section-kicker">
+                        <span>02</span>
+                        <p>Selected work</p>
                     </div>
+                    <h2>Systems built around outcomes.</h2>
                 </div>
 
-                <!-- Experience 2 -->
-                <div class="timeline-item reveal">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <div class="timeline-header">
-                            <h3>Data Science & AI Trainer</h3>
-                            <span class="timeline-company">CoderZ for Software and Training</span>
-                            <span class="timeline-meta"><i class="fa-solid fa-location-dot"></i> Amman, Jordan &bull;
-                                Sep 2025 &ndash; Present</span>
+                <div class="project-list">
+                    <article class="project reveal">
+                        <div class="project-copy">
+                            <div class="project-meta"><span>AI automation / NLP</span><span>01</span></div>
+                            <h3>Customer Voice Intelligence Pipeline</h3>
+                            <p>An end-to-end automation pipeline that ingests live Facebook and Instagram comments through official APIs, classifies customer sentiment, and turns unstructured feedback into actionable signals for brand teams.</p>
+                            <ul class="project-outcomes">
+                                <li><i class="fa-solid fa-check" aria-hidden="true"></i> Real-time social data ingestion</li>
+                                <li><i class="fa-solid fa-check" aria-hidden="true"></i> Automated sentiment classification</li>
+                                <li><i class="fa-solid fa-check" aria-hidden="true"></i> Decision-ready customer insights</li>
+                            </ul>
+                            <div class="tech-list"><span>Python</span><span>n8n</span><span>Meta Graph API</span><span>OpenAI</span><span>NLP</span></div>
                         </div>
-                        <ul class="timeline-details">
-                            <li>Successfully trained and mentored <strong>60+ learners</strong> (university students to
-                                corporate professionals), bridging theoretical AI and production-level industry
-                                application.</li>
-                            <li>Delivered a <strong>150+ hour</strong> intensive DataHub Bootcamp covering <strong>Deep
-                                    Learning architectures (CNNs, RNNs, Transformers)</strong> using
-                                <strong>PyTorch</strong>, alongside NLP and Computer Vision.
-                            </li>
-                            <li>Led comprehensive <strong>Business Intelligence Training (BI Bootcamp)</strong> on data
-                                storytelling, Data Modeling and dashboard design.</li>
-                            <li>Supervised end-to-end Capstone Projects, ensuring learners achieved job readiness by
-                                building deployable AI models.</li>
-                        </ul>
-                    </div>
-                </div>
+                        <div class="project-visual visual-sentiment" aria-label="Sentiment analysis pipeline illustration">
+                            <div class="visual-label">Live signal monitor <span>Active</span></div>
+                            <div class="signal-chart" aria-hidden="true">
+                                <span style="--h:42%"></span><span style="--h:64%"></span><span style="--h:48%"></span><span style="--h:82%"></span><span style="--h:58%"></span><span style="--h:74%"></span><span style="--h:91%"></span><span style="--h:68%"></span><span style="--h:78%"></span><span style="--h:55%"></span><span style="--h:86%"></span><span style="--h:72%"></span>
+                            </div>
+                            <div class="sentiment-breakdown"><div><strong>72%</strong><span>Positive</span></div><div><strong>19%</strong><span>Neutral</span></div><div><strong>09%</strong><span>Negative</span></div></div>
+                        </div>
+                    </article>
 
-                <!-- Experience 3 -->
-                <div class="timeline-item reveal">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <div class="timeline-header">
-                            <h3>AI Engineer <span class="tag">Apprenticeship</span></h3>
-                            <span class="timeline-company">Petra Ride</span>
-                            <span class="timeline-meta"><i class="fa-solid fa-location-dot"></i> Amman, Jordan &bull;
-                                Feb 2025 &ndash; Aug 2025</span>
+                    <article class="project project-reverse reveal">
+                        <div class="project-copy">
+                            <div class="project-meta"><span>AI agent / Automation</span><span>02</span></div>
+                            <h3>Natural-Language Meeting Agent</h3>
+                            <p>An AI agent that understands meeting requests in text or voice through Telegram, extracts intent and logistics, then orchestrates calendar creation and email reminders without manual scheduling.</p>
+                            <ul class="project-outcomes">
+                                <li><i class="fa-solid fa-check" aria-hidden="true"></i> Text and voice interaction</li>
+                                <li><i class="fa-solid fa-check" aria-hidden="true"></i> Intent and entity extraction</li>
+                                <li><i class="fa-solid fa-check" aria-hidden="true"></i> Calendar and email orchestration</li>
+                            </ul>
+                            <div class="tech-list"><span>Python</span><span>OpenAI API</span><span>Telegram API</span><span>Google Calendar</span></div>
                         </div>
-                        <ul class="timeline-details">
-                            <li>Architected an automated feedback system analyzing Instagram comments
-                                (Positive/Neutral/Negative) using <strong>OpenAI LLMs</strong>.</li>
-                            <li>Developed AI-driven identity verification solutions using <strong>AWS
-                                    Rekognition</strong>, implementing face liveness detection to reduce fraud.</li>
-                            <li>Built and deployed scalable computer vision models, integrating them directly into the
-                                company's security infrastructure.</li>
-                        </ul>
-                    </div>
-                </div>
+                        <div class="project-visual visual-agent" aria-label="AI meeting agent workflow illustration">
+                            <div class="agent-flow" aria-hidden="true">
+                                <div class="flow-node"><i class="fa-brands fa-telegram"></i><span>Request</span></div>
+                                <div class="flow-line"><b></b></div>
+                                <div class="flow-node node-core"><i class="fa-solid fa-wand-magic-sparkles"></i><span>Understand</span></div>
+                                <div class="flow-line"><b></b></div>
+                                <div class="flow-node"><i class="fa-regular fa-calendar-check"></i><span>Schedule</span></div>
+                            </div>
+                            <div class="agent-status"><span><i></i> Intent parsed</span><span><i></i> Availability checked</span><span><i></i> Event created</span></div>
+                        </div>
+                    </article>
 
-                <!-- Experience 4 -->
-                <div class="timeline-item reveal">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <div class="timeline-header">
-                            <h3>AI Co-Instructor</h3>
-                            <span class="timeline-company">CoderZ for Software and Training</span>
-                            <span class="timeline-meta"><i class="fa-solid fa-location-dot"></i> Amman, Jordan &bull;
-                                Feb 2025 &ndash; Jun 2025</span>
+                    <article class="project reveal">
+                        <div class="project-copy">
+                            <div class="project-meta"><span>Arabic NLP / Deep learning</span><span>03</span></div>
+                            <h3>Arabic News Classification</h3>
+                            <p>A refined Arabic-language NLP pipeline using BERT, focused on robust preprocessing and feature engineering to classify news content with strong performance across categories.</p>
+                            <div class="project-metric"><strong>95%</strong><span>classification accuracy</span></div>
+                            <div class="tech-list"><span>Python</span><span>Hugging Face</span><span>BERT</span><span>NLP</span></div>
                         </div>
-                        <ul class="timeline-details">
-                            <li>Co-facilitated Python and AI training modules, simplifying complex algorithms into
-                                practical, hands-on exercises for multidisciplinary cohorts.</li>
-                        </ul>
-                    </div>
+                        <div class="project-visual visual-nlp" aria-label="Arabic text classification performance illustration">
+                            <div class="nlp-score"><span>Model confidence</span><strong>0.95</strong></div>
+                            <div class="nlp-bars" aria-hidden="true">
+                                <div><span>Economy</span><i><b style="--w:95%"></b></i><em>95</em></div>
+                                <div><span>Technology</span><i><b style="--w:92%"></b></i><em>92</em></div>
+                                <div><span>Sports</span><i><b style="--w:88%"></b></i><em>88</em></div>
+                                <div><span>Politics</span><i><b style="--w:84%"></b></i><em>84</em></div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project project-reverse reveal">
+                        <div class="project-copy">
+                            <div class="project-meta"><span>Machine learning / Smart spaces</span><span>04</span></div>
+                            <h3>AI-Driven Occupancy Detection</h3>
+                            <p>A non-intrusive machine learning system for real-time indoor occupancy estimation, enabling smarter HVAC and lighting decisions while supporting energy-efficient building operations.</p>
+                            <ul class="project-outcomes">
+                                <li><i class="fa-solid fa-check" aria-hidden="true"></i> Privacy-aware sensor inputs</li>
+                                <li><i class="fa-solid fa-check" aria-hidden="true"></i> Real-time occupancy estimates</li>
+                                <li><i class="fa-solid fa-check" aria-hidden="true"></i> Energy optimization signals</li>
+                            </ul>
+                            <div class="tech-list"><span>Python</span><span>Scikit-learn</span><span>Pandas</span><span>Sensor Data</span></div>
+                        </div>
+                        <div class="project-visual visual-occupancy" aria-label="Smart building occupancy illustration">
+                            <div class="floor-plan" aria-hidden="true">
+                                <div class="room room-a"><i></i><i></i><span>Zone A</span></div>
+                                <div class="room room-b"><i></i><span>Zone B</span></div>
+                                <div class="room room-c"><i></i><i></i><i></i><span>Zone C</span></div>
+                            </div>
+                            <div class="occupancy-total"><span>Live occupancy</span><strong>06</strong><em>people detected</em></div>
+                        </div>
+                    </article>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Projects Section -->
-    <section class="section" id="projects">
-        <div class="container">
-            <h2 class="section-title reveal"><span class="title-number">03.</span> Projects</h2>
-            <div class="projects-grid">
-                <!-- Project 1 -->
-                <div class="project-card reveal">
-                    <div class="project-card-header">
-                        <i class="fa-solid fa-folder-open project-icon"></i>
-                        <div class="project-links">
-                            <a href="https://github.com/Saif-Damra" target="_blank" rel="noopener noreferrer"
-                                aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
-                        </div>
-                    </div>
-                    <h3 class="project-title">Social Media Sentiment Analysis & Customer Voice Pipeline</h3>
-                    <p class="project-description">
-                        Architected an end-to-end automation pipeline using <strong>n8n</strong> to ingest real-time
-                        comments from <strong>Facebook & Instagram</strong>
-                        via official APIs. Implemented advanced <strong>NLP models</strong> to analyze customer
-                        feedback, classifying sentiment to extract actionable insights on brand reputation.
-                    </p>
-                    <div class="project-tech">
-                        <span>Python</span>
-                        <span>n8n</span>
-                        <span>Meta Graph API</span>
-                        <span>NLP</span>
-                        <span>OpenAI</span>
-                    </div>
+        <section class="experience section" id="experience">
+            <div class="section-shell experience-grid">
+                <div class="experience-lead reveal">
+                    <div class="section-kicker light"><span>03</span><p>Experience</p></div>
+                    <h2>Technical depth, shaped by delivery.</h2>
+                    <p>My work spans production systems, analytics, and teaching. Each role sharpened a different part of how I solve problems.</p>
                 </div>
 
-                <!-- Project 2 -->
-                <div class="project-card reveal">
-                    <div class="project-card-header">
-                        <i class="fa-solid fa-folder-open project-icon"></i>
-                        <div class="project-links">
-                            <a href="https://github.com/Saif-Damra" target="_blank" rel="noopener noreferrer"
-                                aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
-                        </div>
-                    </div>
-                    <h3 class="project-title">AI-Powered Meeting Scheduler Bot</h3>
-                    <p class="project-description">
-                        Developed an AI agent that schedules meetings through <strong>Telegram</strong> using natural
-                        language (text or voice).
-                        The system uses <strong>OpenAI</strong> to understand user intent, extract meeting details, and
-                        automates calendar event creation and email reminders.
-                    </p>
-                    <div class="project-tech">
-                        <span>Python</span>
-                        <span>OpenAI API</span>
-                        <span>Telegram API</span>
-                        <span>Google Calendar</span>
-                    </div>
-                </div>
-
-                <!-- Project 3 -->
-                <div class="project-card reveal">
-                    <div class="project-card-header">
-                        <i class="fa-solid fa-folder-open project-icon"></i>
-                        <div class="project-links">
-                            <a href="https://github.com/Saif-Damra" target="_blank" rel="noopener noreferrer"
-                                aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
-                        </div>
-                    </div>
-                    <h3 class="project-title">Arabic Text Processing & Classification</h3>
-                    <p class="project-description">
-                        Developed an NLP pipeline for <strong>Arabic news classification</strong>, achieving <strong>95%
-                            accuracy</strong> with <strong>BERT</strong>.
-                        Refined data preprocessing and feature engineering, improving model accuracy and macro F1-score.
-                    </p>
-                    <div class="project-tech">
-                        <span>Python</span>
-                        <span>Hugging Face</span>
-                        <span>BERT</span>
-                        <span>NLP</span>
-                    </div>
-                </div>
-
-                <!-- Project 4 -->
-                <div class="project-card reveal">
-                    <div class="project-card-header">
-                        <i class="fa-solid fa-folder-open project-icon"></i>
-                        <div class="project-links">
-                            <a href="https://github.com/Saif-Damra" target="_blank" rel="noopener noreferrer"
-                                aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
-                        </div>
-                    </div>
-                    <h3 class="project-title">AI-Driven Occupancy Detection</h3>
-                    <p class="project-description">
-                        Developed a machine learning model for <strong>indoor occupancy estimation</strong> using
-                        non-intrusive sensors,
-                        enhancing smart building energy efficiency through real-time HVAC and lighting adjustments.
-                    </p>
-                    <div class="project-tech">
-                        <span>Python</span>
-                        <span>Scikit-Learn</span>
-                        <span>Pandas</span>
-                    </div>
+                <div class="role-list">
+                    <article class="role reveal">
+                        <div class="role-date">Aug 2025 / Present</div>
+                        <div class="role-body"><h3>Data Analyst & BI Specialist</h3><p class="role-company">CoderZ for Software and Training</p><p>Built a real-time attendance system with n8n and a self-hosted VPS, eliminating manual entry. Developed automated reporting workflows and advanced Power BI dashboards with DAX and data modeling.</p></div>
+                    </article>
+                    <article class="role reveal">
+                        <div class="role-date">Sep 2025 / Present</div>
+                        <div class="role-body"><h3>Data Science & AI Trainer</h3><p class="role-company">CoderZ for Software and Training</p><p>Trained and mentored 60+ learners across deep learning, NLP, computer vision, and business intelligence. Delivered a 150+ hour bootcamp and supervised deployable capstone projects.</p></div>
+                    </article>
+                    <article class="role reveal">
+                        <div class="role-date">Feb 2025 / Aug 2025</div>
+                        <div class="role-body"><h3>AI Engineer <span>Apprenticeship</span></h3><p class="role-company">Petra Ride</p><p>Architected an automated social feedback system using OpenAI models and developed identity verification solutions with AWS Rekognition and face liveness detection.</p></div>
+                    </article>
+                    <article class="role reveal">
+                        <div class="role-date">Feb 2025 / Jun 2025</div>
+                        <div class="role-body"><h3>AI Co-Instructor</h3><p class="role-company">CoderZ for Software and Training</p><p>Co-facilitated Python and AI training, translating complex algorithms into practical exercises for multidisciplinary cohorts.</p></div>
+                    </article>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Skills Section -->
-    <section class="section" id="skills">
-        <div class="container">
-            <h2 class="section-title reveal"><span class="title-number">04.</span> Skills</h2>
-            <div class="skills-grid">
-                <div class="skill-category reveal">
-                    <div class="skill-category-icon"><i class="fa-solid fa-code"></i></div>
-                    <h3>Languages & Frameworks</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">Python</span>
-                        <span class="skill-tag">SQL</span>
-                        <span class="skill-tag">PyTorch</span>
-                        <span class="skill-tag">Scikit-Learn</span>
-                    </div>
+        <section class="expertise section" id="expertise">
+            <div class="section-shell">
+                <div class="section-heading-row reveal">
+                    <div class="section-kicker"><span>04</span><p>Expertise</p></div>
+                    <h2>A connected technical toolkit.</h2>
                 </div>
-                <div class="skill-category reveal">
-                    <div class="skill-category-icon"><i class="fa-solid fa-brain"></i></div>
-                    <h3>AI & Data Science</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">Machine Learning</span>
-                        <span class="skill-tag">Deep Learning</span>
-                        <span class="skill-tag">CNN</span>
-                        <span class="skill-tag">RNN</span>
-                        <span class="skill-tag">Transformers</span>
-                        <span class="skill-tag">NLP</span>
-                        <span class="skill-tag">Computer Vision</span>
-                        <span class="skill-tag">BERT</span>
-                    </div>
-                </div>
-                <div class="skill-category reveal">
-                    <div class="skill-category-icon"><i class="fa-solid fa-cloud"></i></div>
-                    <h3>Cloud & MLOps</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">AWS (Rekognition)</span>
-                        <span class="skill-tag">n8n</span>
-                        <span class="skill-tag">Docker</span>
-                        <span class="skill-tag">VPS Deployment</span>
-                        <span class="skill-tag">Git</span>
-                    </div>
-                </div>
-                <div class="skill-category reveal">
-                    <div class="skill-category-icon"><i class="fa-solid fa-chart-line"></i></div>
-                    <h3>BI & Analytics</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">Power BI</span>
-                        <span class="skill-tag">Advanced DAX</span>
-                        <span class="skill-tag">PostgreSQL</span>
-                        <span class="skill-tag">Excel</span>
-                        <span class="skill-tag">Dashboarding</span>
-                    </div>
-                </div>
-                <div class="skill-category reveal">
-                    <div class="skill-category-icon"><i class="fa-solid fa-people-group"></i></div>
-                    <h3>Soft Skills</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">Technical Training</span>
-                        <span class="skill-tag">Curriculum Design</span>
-                        <span class="skill-tag">Stakeholder Management</span>
-                        <span class="skill-tag">Public Speaking</span>
-                    </div>
+                <div class="expertise-grid reveal">
+                    <article><i class="fa-solid fa-code" aria-hidden="true"></i><h3>Engineering</h3><p>Python, SQL, PyTorch, scikit-learn, PostgreSQL, Git</p></article>
+                    <article><i class="fa-solid fa-brain" aria-hidden="true"></i><h3>AI & Data Science</h3><p>Machine Learning, Deep Learning, Transformers, NLP, Computer Vision, BERT</p></article>
+                    <article><i class="fa-solid fa-gears" aria-hidden="true"></i><h3>Automation & Cloud</h3><p>n8n, Power Automate, Docker, VPS Deployment, AWS Rekognition</p></article>
+                    <article><i class="fa-solid fa-chart-simple" aria-hidden="true"></i><h3>Analytics</h3><p>Power BI, Advanced DAX, Data Modeling, Excel, Dashboard Design</p></article>
+                    <article><i class="fa-solid fa-people-group" aria-hidden="true"></i><h3>Enablement</h3><p>Technical Training, Curriculum Design, Stakeholder Communication, Public Speaking</p></article>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Education Section -->
-    <section class="section" id="education">
-        <div class="container">
-            <h2 class="section-title reveal"><span class="title-number">05.</span> Education</h2>
-            <div class="education-grid">
-                <div class="education-card reveal">
-                    <div class="education-icon"><i class="fa-solid fa-graduation-cap"></i></div>
-                    <h3>B.Sc. in Data Science and Artificial Intelligence</h3>
-                    <p class="education-school">Al Hussein Technical University (HTU)</p>
-                    <p class="education-location"><i class="fa-solid fa-location-dot"></i> Amman, Jordan</p>
-                    <p class="education-year">2021 &ndash; 2025</p>
+        <section class="credentials section" id="credentials">
+            <div class="section-shell credentials-grid">
+                <div class="education-block reveal">
+                    <div class="section-kicker"><span>05</span><p>Education</p></div>
+                    <article><span>2021 / 2025</span><h3>B.Sc. in Data Science and Artificial Intelligence</h3><p>Al Hussein Technical University, Amman</p></article>
+                    <article><span>2025</span><h3>Level 5 Higher National Diploma in Computing</h3><p>Pearson BTEC / Al Hussein Technical University</p></article>
                 </div>
-                <div class="education-card reveal">
-                    <div class="education-icon"><i class="fa-solid fa-award"></i></div>
-                    <h3>Level 5 Higher National Diploma (HND) in Computing</h3>
-                    <p class="education-school">Pearson BTEC / Al Hussein Technical University (HTU)</p>
-                    <p class="education-location"><i class="fa-solid fa-location-dot"></i> Amman, Jordan</p>
-                    <p class="education-year">Feb 2025</p>
+                <div class="certification-block reveal">
+                    <div class="section-kicker"><span>06</span><p>Certifications</p></div>
+                    <ul>
+                        <li><span>AWS Certified AI Practitioner</span><em>Amazon Web Services</em></li>
+                        <li><span>Nutanix Certified Associate 6.10</span><em>Nutanix</em></li>
+                        <li><span>D-180 Digital Mentoring Program</span><em>Deloitte</em></li>
+                        <li><span>Machine Learning Specialization</span><em>Coursera</em></li>
+                        <li><span>Neural Networks and Deep Learning</span><em>Coursera</em></li>
+                        <li><span>Generative Adversarial Networks</span><em>Coursera</em></li>
+                        <li><span>The Complete SQL Bootcamp</span><em>Udemy</em></li>
+                    </ul>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Certificates Section -->
-    <section class="section" id="certificates">
-        <div class="container">
-            <h2 class="section-title reveal"><span class="title-number">06.</span> Certificates</h2>
-            <div class="certificates-grid">
-                <div class="certificate-card reveal">
-                    <div class="cert-icon"><svg class="deloitte-logo" viewBox="0 0 40 40" width="32" height="32"
-                            xmlns="http://www.w3.org/2000/svg"><text x="4" y="30" font-family="Arial, sans-serif"
-                                font-weight="900" font-size="32" fill="#ccd6f6">D</text>
-                            <circle cx="30" cy="28" r="4" fill="#86BC25" />
-                        </svg></div>
-                    <h4>D-180 Digital Mentoring Program</h4>
-                    <p>Deloitte</p>
-                </div>
-                <div class="certificate-card reveal">
-                    <div class="cert-icon"><i class="fa-brands fa-aws"></i></div>
-                    <h4>AWS Certified AI Practitioner</h4>
-                    <p>Amazon Web Services</p>
-                </div>
-                <div class="certificate-card reveal">
-                    <div class="cert-icon"><i class="fa-solid fa-server"></i></div>
-                    <h4>Nutanix Certified Associate (NCA) 6.10</h4>
-                    <p>Nutanix</p>
-                </div>
-                <div class="certificate-card reveal">
-                    <div class="cert-icon"><i class="fa-solid fa-robot"></i></div>
-                    <h4>Generative Adversarial Networks (GANs)</h4>
-                    <p>Coursera</p>
-                </div>
-                <div class="certificate-card reveal">
-                    <div class="cert-icon"><i class="fa-solid fa-network-wired"></i></div>
-                    <h4>Neural Networks and Deep Learning</h4>
-                    <p>Coursera</p>
-                </div>
-                <div class="certificate-card reveal">
-                    <div class="cert-icon"><i class="fa-solid fa-gears"></i></div>
-                    <h4>Machine Learning Specialization</h4>
-                    <p>Coursera</p>
-                </div>
-                <div class="certificate-card reveal">
-                    <div class="cert-icon"><i class="fa-solid fa-database"></i></div>
-                    <h4>The Complete SQL Bootcamp</h4>
-                    <p>Udemy</p>
+        <section class="contact" id="contact">
+            <div class="contact-shell reveal">
+                <p class="eyebrow">Available for ambitious work</p>
+                <h2>Have a problem worth solving?</h2>
+                <a class="contact-email" href="mailto:saif.damra@outlook.com">Let's build the answer. <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+                <div class="contact-details">
+                    <a href="mailto:saif.damra@outlook.com"><i class="fa-regular fa-envelope" aria-hidden="true"></i> saif.damra@outlook.com</a>
+                    <a href="tel:+962787820746"><i class="fa-solid fa-phone" aria-hidden="true"></i> +962 7878 20 746</a>
+                    <a href="https://www.linkedin.com/in/saifdamra/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin-in" aria-hidden="true"></i> LinkedIn</a>
+                    <a href="https://github.com/Saif-Damra" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github" aria-hidden="true"></i> GitHub</a>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
-    <!-- Contact Section -->
-    <section class="section" id="contact">
-        <div class="container">
-            <h2 class="section-title reveal"><span class="title-number">07.</span> Get In Touch</h2>
-            <div class="contact-content reveal">
-                <p class="contact-text">
-                    I'm currently open to new opportunities and collaborations. Whether you have a question,
-                    a project idea, or just want to say hi, my inbox is always open!
-                </p>
-                <a href="mailto:saif.damra@outlook.com" class="btn btn-primary btn-lg">Say Hello <i
-                        class="fa-solid fa-paper-plane"></i></a>
-                <div class="contact-links">
-                    <a href="mailto:saif.damra@outlook.com" class="contact-link-item">
-                        <i class="fa-solid fa-envelope"></i>
-                        <span>saif.damra@outlook.com</span>
-                    </a>
-                    <a href="tel:+962787820746" class="contact-link-item">
-                        <i class="fa-solid fa-phone"></i>
-                        <span>+962 7878 20 746</span>
-                    </a>
-                    <a href="https://www.linkedin.com/in/saifdamra/" target="_blank" rel="noopener noreferrer"
-                        class="contact-link-item">
-                        <i class="fa-brands fa-linkedin-in"></i>
-                        <span>LinkedIn</span>
-                    </a>
-                    <a href="https://github.com/Saif-Damra" target="_blank" rel="noopener noreferrer"
-                        class="contact-link-item">
-                        <i class="fa-brands fa-github"></i>
-                        <span>GitHub</span>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
     <footer class="footer">
-        <div class="container">
-            <div class="footer-socials">
-                <a href="https://github.com/Saif-Damra" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i
-                        class="fa-brands fa-github"></i></a>
-                <a href="https://www.linkedin.com/in/saifdamra/" target="_blank" rel="noopener noreferrer"
-                    aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
-                <a href="mailto:saif.damra@outlook.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
-            </div>
-            <p class="footer-text">Designed & Built by <strong>Saif Damra</strong></p>
-            <p class="footer-copyright">&copy; 2026 All rights reserved.</p>
-        </div>
+        <a class="brand footer-brand" href="#home"><span class="brand-mark">SD</span><span class="brand-name">Saif Damra</span></a>
+        <p>AI Engineer & Data Scientist / Amman, Jordan</p>
+        <p>&copy; <span id="year">2026</span> Saif Damra</p>
     </footer>
 
     <script src="script.js"></script>
