@@ -2,6 +2,7 @@ const header = document.getElementById('site-header');
 const progress = document.getElementById('scroll-progress');
 const menuToggle = document.getElementById('menu-toggle');
 const navMenu = document.getElementById('nav-menu');
+const menuBackdrop = document.getElementById('menu-backdrop');
 const navLinks = [...document.querySelectorAll('.nav-link')];
 const sections = [...document.querySelectorAll('main section[id]')];
 const heroMedia = document.querySelector('.hero-media');
@@ -53,6 +54,7 @@ document.querySelectorAll('.nav-menu a').forEach((link) => link.addEventListener
 document.addEventListener('keydown', (event) => {
     if (event.key === 'Escape') closeMenu();
 });
+if (menuBackdrop) menuBackdrop.addEventListener('click', closeMenu);
 
 const revealObserver = new IntersectionObserver((entries, observer) => {
     entries.forEach((entry) => {
