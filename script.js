@@ -8,9 +8,14 @@ const sections = [...document.querySelectorAll('main section[id]')];
 const heroMedia = document.querySelector('.hero-media');
 const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
 
+let scrollable = document.documentElement.scrollHeight - window.innerHeight;
+function measure() {
+    scrollable = document.documentElement.scrollHeight - window.innerHeight;
+}
+window.addEventListener('resize', measure, { passive: true });
+
 function updateScrollState() {
     const scrollTop = window.scrollY;
-    const scrollable = document.documentElement.scrollHeight - window.innerHeight;
     const percentage = scrollable > 0 ? (scrollTop / scrollable) * 100 : 0;
 
     header.classList.toggle('scrolled', scrollTop > 24);
@@ -65,6 +70,26 @@ const revealObserver = new IntersectionObserver((entries, observer) => {
 }, { threshold: 0.12, rootMargin: '0px 0px -50px' });
 
 document.querySelectorAll('.reveal').forEach((element) => revealObserver.observe(element));
+
+// Defer the hero video: the poster carries the first paint, the 8 MB file loads
+// after the page settles — and never on reduced-motion or a metered/slow link.
+function loadHeroVideo() {
+    if (!heroMedia) return;
+    const conn = navigator.connection || {};
+    if (reducedMotion.matches || conn.saveData || /2g/.test(conn.effectiveType || '')) return;
+    const source = heroMedia.querySelector('source[data-src]');
+    if (!source || source.src) return;
+    source.src = source.dataset.src;
+    heroMedia.load();
+}
+
+if (heroMedia && reducedMotion.matches) {
+    heroMedia.removeAttribute('autoplay');
+} else if (document.readyState === 'complete') {
+    loadHeroVideo();
+} else {
+    window.addEventListener('load', () => setTimeout(loadHeroVideo, 200), { once: true });
+}
 
 if (heroMedia && !reducedMotion.matches && window.matchMedia('(pointer: fine)').matches) {
     document.querySelector('.hero').addEventListener('pointermove', (event) => {
