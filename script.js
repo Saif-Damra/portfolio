@@ -216,6 +216,7 @@
         }
         document.addEventListener('mousemove', onMove);
         document.addEventListener('mouseleave', function () {
+            active = false;
             document.documentElement.classList.remove('cursor-active');
         });
 
