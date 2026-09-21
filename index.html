@@ -4,17 +4,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Saif Damra | AI Engineer & Data Scientist</title>
+    <title>Saif Damra | AI Engineer &amp; Data Scientist</title>
     <meta name="description"
         content="Saif Damra is an AI Engineer and Data Scientist building production AI systems, automation workflows, and decision-ready analytics.">
     <meta name="keywords" content="Saif Damra, AI Engineer, Data Scientist, Machine Learning, NLP, Computer Vision, Power BI, Jordan">
     <meta name="author" content="Saif Damra">
-    <meta name="theme-color" content="#0d0e0e">
+    <meta name="theme-color" content="#F6F3EE">
 
-    <meta property="og:title" content="Saif Damra | AI Engineer & Data Scientist">
+    <meta property="og:title" content="Saif Damra | AI Engineer &amp; Data Scientist">
     <meta property="og:description" content="From raw signals to intelligent systems that create measurable impact.">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="assets/hero-ai-system.png">
+    <meta property="og:image" content="assets/hero-ai-system.webp">
+
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+
+    <!-- Theme resolution: runs before first paint to avoid a flash of the wrong theme -->
+    <script>
+        (function () {
+            try {
+                var stored = localStorage.getItem('saif-theme');
+                var theme = stored || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+                document.documentElement.setAttribute('data-theme', theme);
+            } catch (e) {}
+        })();
+        document.documentElement.classList.add('js');
+    </script>
 
     <!-- Google Analytics 4 -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-YDCT4Y4618"></script>
@@ -25,11 +39,9 @@
         gtag('config', 'G-YDCT4Y4618');
     </script>
 
-    <script>document.documentElement.classList.add('js');</script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -39,9 +51,14 @@
 
     <header class="site-header" id="site-header">
         <nav class="nav-shell" aria-label="Main navigation">
-            <a class="brand" href="#home" aria-label="Saif Damra, home">
-                <span class="brand-mark">SD</span>
-                <span class="brand-name">Saif Damra</span>
+            <a class="brand" href="#home" aria-label="SAIF, home">
+                <span class="brand-mark">
+                    <svg viewBox="442.5 317.25 314.5 115.75" role="img" aria-hidden="true" focusable="false">
+                        <path class="ink" fill="currentColor" d="M 484.292969 432.480469 C 475.113281 432.480469 467.199219 431.003906 460.550781 428.046875 C 454.007812 424.988281 447.996094 420.398438 442.507812 414.277344 L 458.652344 398.292969 C 462.238281 402.40625 466.195312 405.625 470.523438 407.945312 C 474.957031 410.164062 480.074219 411.269531 485.878906 411.269531 C 491.152344 411.269531 495.214844 410.320312 498.066406 408.421875 C 501.019531 406.523438 502.496094 403.882812 502.496094 400.507812 C 502.496094 397.449219 501.546875 394.96875 499.648438 393.066406 C 497.75 391.167969 495.214844 389.535156 492.050781 388.160156 C 488.988281 386.789062 485.5625 385.46875 481.761719 384.203125 C 478.070312 382.9375 474.375 381.511719 470.683594 379.929688 C 466.988281 378.242188 463.558594 376.183594 460.394531 373.757812 C 457.332031 371.226562 454.855469 368.113281 452.953125 364.417969 C 451.054688 360.621094 450.105469 355.871094 450.105469 350.171875 C 450.105469 343.3125 451.742188 337.40625 455.011719 332.445312 C 458.386719 327.484375 463.03125 323.738281 468.941406 321.207031 C 474.851562 318.570312 481.65625 317.25 489.359375 317.25 C 497.167969 317.25 504.289062 318.621094 510.726562 321.367188 C 517.269531 324.109375 522.652344 327.855469 526.871094 332.605469 L 510.726562 348.589844 C 507.351562 345.109375 503.921875 342.523438 500.4375 340.835938 C 497.0625 339.144531 493.210938 338.300781 488.882812 338.300781 C 484.558594 338.300781 481.128906 339.144531 478.597656 340.835938 C 476.0625 342.417969 474.796875 344.738281 474.796875 347.800781 C 474.796875 350.648438 475.746094 352.96875 477.644531 354.761719 C 479.546875 356.453125 482.027344 357.929688 485.085938 359.195312 C 488.25 360.460938 491.679688 361.726562 495.375 362.996094 C 499.171875 364.261719 502.917969 365.738281 506.613281 367.425781 C 510.304688 369.113281 513.683594 371.277344 516.742188 373.914062 C 519.910156 376.449219 522.441406 379.71875 524.339844 383.730469 C 526.238281 387.632812 527.1875 392.488281 527.1875 398.292969 C 527.1875 408.949219 523.390625 417.339844 515.792969 423.457031 C 508.195312 429.472656 497.695312 432.480469 484.292969 432.480469 Z M 679.445312 430.738281 L 679.445312 318.992188 L 704.296875 318.992188 L 704.296875 430.738281 Z M 698.441406 386.894531 L 698.441406 365.527344 L 754.3125 365.527344 L 754.3125 386.894531 Z M 698.441406 340.359375 L 698.441406 318.992188 L 756.847656 318.992188 L 756.847656 340.359375 Z M 698.441406 340.359375 " />
+                        <path class="ai" fill="currentColor" d="M 531.382812 430.738281 L 575.703125 318.992188 L 598.179688 318.992188 L 642.023438 430.738281 L 615.75 430.738281 L 582.191406 337.984375 L 591.214844 337.984375 L 557.183594 430.738281 Z M 556.550781 410.480469 L 556.550781 390.21875 L 617.492188 390.21875 L 617.492188 410.480469 Z M 639.011719 430.738281 L 639.011719 318.992188 L 663.859375 318.992188 L 663.859375 430.738281 Z M 639.011719 430.738281 " />
+                    </svg>
+                </span>
+                <span class="brand-role">AI Engineer &middot; Data Scientist</span>
             </a>
 
             <button class="menu-toggle" id="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-menu" aria-label="Open navigation">
@@ -49,42 +66,84 @@
             </button>
 
             <div class="nav-menu" id="nav-menu">
-                <a class="nav-link" href="#about">About</a>
-                <a class="nav-link" href="#work">Work</a>
-                <a class="nav-link" href="#experience">Experience</a>
-                <a class="nav-link" href="#expertise">Expertise</a>
-                <a class="nav-contact nav-contact-filled" href="#contact">Let's talk <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
+                <div class="nav-links">
+                    <a class="nav-link" href="#about">About</a>
+                    <a class="nav-link" href="#work">Work</a>
+                    <a class="nav-link" href="#experience">Experience</a>
+                    <a class="nav-link" href="#expertise">Expertise</a>
+                </div>
+                <div class="nav-actions">
+                    <button class="theme-toggle" id="theme-toggle" type="button" aria-pressed="false" aria-label="Toggle dark mode">
+                        <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79Z"/></svg>
+                        <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+                    </button>
+                    <a class="nav-contact-filled" href="#contact">Let's talk
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>
+                    </a>
+                </div>
             </div>
         </nav>
     </header>
 
     <main id="main-content">
         <section class="hero" id="home" aria-labelledby="hero-title">
-            <video class="hero-media" autoplay muted loop playsinline aria-hidden="true">
-                <source src="assets/Video.mp4" type="video/mp4">
-            </video>
-            <div class="hero-shade" aria-hidden="true"></div>
             <div class="hero-shell">
                 <div class="hero-copy">
-                    <p class="eyebrow hero-eyebrow"><span class="status-dot"></span> AI Engineer &bull; Data Scientist &bull; Amman, Jordan</p>
-                    <h1 id="hero-title">Saif Damra</h1>
+                    <p class="eyebrow hero-eyebrow"><span class="status-dot" aria-hidden="true"></span> AI Engineer &bull; Data Scientist &bull; Amman, Jordan</p>
+                    <h1 id="hero-title" class="hero-wordmark" aria-label="SAIF">
+                        <span class="hero-logo">
+                            <svg viewBox="442.5 317.25 314.5 115.75" role="img" aria-hidden="true" focusable="false">
+                                <path class="ink" fill="currentColor" d="M 484.292969 432.480469 C 475.113281 432.480469 467.199219 431.003906 460.550781 428.046875 C 454.007812 424.988281 447.996094 420.398438 442.507812 414.277344 L 458.652344 398.292969 C 462.238281 402.40625 466.195312 405.625 470.523438 407.945312 C 474.957031 410.164062 480.074219 411.269531 485.878906 411.269531 C 491.152344 411.269531 495.214844 410.320312 498.066406 408.421875 C 501.019531 406.523438 502.496094 403.882812 502.496094 400.507812 C 502.496094 397.449219 501.546875 394.96875 499.648438 393.066406 C 497.75 391.167969 495.214844 389.535156 492.050781 388.160156 C 488.988281 386.789062 485.5625 385.46875 481.761719 384.203125 C 478.070312 382.9375 474.375 381.511719 470.683594 379.929688 C 466.988281 378.242188 463.558594 376.183594 460.394531 373.757812 C 457.332031 371.226562 454.855469 368.113281 452.953125 364.417969 C 451.054688 360.621094 450.105469 355.871094 450.105469 350.171875 C 450.105469 343.3125 451.742188 337.40625 455.011719 332.445312 C 458.386719 327.484375 463.03125 323.738281 468.941406 321.207031 C 474.851562 318.570312 481.65625 317.25 489.359375 317.25 C 497.167969 317.25 504.289062 318.621094 510.726562 321.367188 C 517.269531 324.109375 522.652344 327.855469 526.871094 332.605469 L 510.726562 348.589844 C 507.351562 345.109375 503.921875 342.523438 500.4375 340.835938 C 497.0625 339.144531 493.210938 338.300781 488.882812 338.300781 C 484.558594 338.300781 481.128906 339.144531 478.597656 340.835938 C 476.0625 342.417969 474.796875 344.738281 474.796875 347.800781 C 474.796875 350.648438 475.746094 352.96875 477.644531 354.761719 C 479.546875 356.453125 482.027344 357.929688 485.085938 359.195312 C 488.25 360.460938 491.679688 361.726562 495.375 362.996094 C 499.171875 364.261719 502.917969 365.738281 506.613281 367.425781 C 510.304688 369.113281 513.683594 371.277344 516.742188 373.914062 C 519.910156 376.449219 522.441406 379.71875 524.339844 383.730469 C 526.238281 387.632812 527.1875 392.488281 527.1875 398.292969 C 527.1875 408.949219 523.390625 417.339844 515.792969 423.457031 C 508.195312 429.472656 497.695312 432.480469 484.292969 432.480469 Z M 679.445312 430.738281 L 679.445312 318.992188 L 704.296875 318.992188 L 704.296875 430.738281 Z M 698.441406 386.894531 L 698.441406 365.527344 L 754.3125 365.527344 L 754.3125 386.894531 Z M 698.441406 340.359375 L 698.441406 318.992188 L 756.847656 318.992188 L 756.847656 340.359375 Z M 698.441406 340.359375 " />
+                                <path class="ai" fill="currentColor" d="M 531.382812 430.738281 L 575.703125 318.992188 L 598.179688 318.992188 L 642.023438 430.738281 L 615.75 430.738281 L 582.191406 337.984375 L 591.214844 337.984375 L 557.183594 430.738281 Z M 556.550781 410.480469 L 556.550781 390.21875 L 617.492188 390.21875 L 617.492188 410.480469 Z M 639.011719 430.738281 L 639.011719 318.992188 L 663.859375 318.992188 L 663.859375 430.738281 Z M 639.011719 430.738281 " />
+                            </svg>
+                        </span>
+                    </h1>
                     <p class="hero-statement">I turn raw signals into <strong>intelligent systems</strong> that work in the real world.</p>
                     <div class="hero-actions">
-                        <a class="button button-primary" href="#work">Explore selected work <i class="fa-solid fa-arrow-down" aria-hidden="true"></i></a>
+                        <a class="button button-primary" href="#work">Explore selected work
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
+                        </a>
+                        <a class="button button-ghost" href="assets/Saif-Damra-CV.pdf" download="Saif-Damra-CV.pdf">Download CV
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12M6 11l6 6 6-6M5 21h14"/></svg>
+                        </a>
                     </div>
                 </div>
 
+                <div class="hero-system" aria-label="Animated AI system illustration">
+                    <div class="system-glow" aria-hidden="true"></div>
+                    <div class="system-window">
+                        <div class="system-bar">
+                            <span class="system-label"><i aria-hidden="true"></i> Live intelligence</span>
+                            <span class="system-status">Running</span>
+                        </div>
+                        <div class="system-stage">
+                            <div class="signal signal-one" aria-hidden="true"></div>
+                            <div class="signal signal-two" aria-hidden="true"></div>
+                            <div class="system-core" aria-hidden="true"><span>AI</span></div>
+                            <div class="system-chip chip-data"><small>INPUT</small><strong>Raw signals</strong></div>
+                            <div class="system-chip chip-model"><small>MODEL</small><strong>Understands</strong></div>
+                            <div class="system-chip chip-output"><small>OUTPUT</small><strong>Decisions</strong></div>
+                        </div>
+                        <div class="system-footer">
+                            <span>System confidence</span>
+                            <strong>98.4%</strong>
+                            <div class="system-meter" aria-hidden="true"><i></i></div>
+                        </div>
+                    </div>
+                    <p class="system-caption"><span aria-hidden="true">✦</span> Signals in. Clarity out.</p>
+                </div>
+
                 <div class="hero-proof" aria-label="Career highlights">
-                    <div><strong>160+</strong><span>Learners trained</span></div>
-                    <div><strong>500+</strong><span>Hours delivered</span></div>
-                    <div><strong>7</strong><span>Professional certifications</span></div>
+                    <div><strong data-count-to="160" data-suffix="+">0</strong><span>Learners trained</span></div>
+                    <div><strong data-count-to="500" data-suffix="+">0</strong><span>Hours delivered</span></div>
+                    <div><strong data-count-to="7" data-suffix="">0</strong><span>Professional certifications</span></div>
                 </div>
             </div>
         </section>
 
         <div class="capability-strip" aria-label="Core capabilities">
-            <div class="capability-track">
-                <span>Machine Learning</span><i></i><span>AI Automation</span><i></i><span>Natural Language Processing</span><i></i><span>Computer Vision</span><i></i><span>Business Intelligence</span><i></i><span>Technical Training</span>
+            <div class="capability-track" aria-hidden="true">
+                <span>Machine Learning</span><i></i><span>AI Automation</span><i></i><span>Natural Language Processing</span><i></i><span>Computer Vision</span><i></i><span>Business Intelligence</span><i></i><span>Technical Training</span><i></i><span>Machine Learning</span><i></i><span>AI Automation</span><i></i><span>Natural Language Processing</span><i></i><span>Computer Vision</span><i></i><span>Business Intelligence</span><i></i><span>Technical Training</span>
             </div>
         </div>
 
@@ -96,22 +155,23 @@
                 </div>
                 <div class="intro-content">
                     <h2 class="display-heading reveal">I work where models, automation, and decisions meet.</h2>
+                    <span class="rule" aria-hidden="true"></span>
                     <div class="intro-columns reveal">
                         <p>I am an AI Engineer and Data Scientist with a B.Sc. in Data Science and Artificial Intelligence from Al Hussein Technical University. I design solutions across machine learning, NLP, computer vision, analytics, and workflow automation.</p>
                         <p>My edge is range with depth: I can architect the technical system, connect it to business operations, communicate the insight clearly, and help teams build the capability to own it.</p>
                     </div>
-                    <div class="value-grid reveal">
-                        <article>
+                    <div class="value-grid">
+                        <article class="reveal">
                             <span class="value-number">A</span>
                             <h3>Build for reality</h3>
                             <p>Production-minded systems shaped around real users, constraints, and outcomes.</p>
                         </article>
-                        <article>
+                        <article class="reveal">
                             <span class="value-number">B</span>
                             <h3>Connect the stack</h3>
                             <p>Models, APIs, workflows, dashboards, and deployment working as one system.</p>
                         </article>
-                        <article>
+                        <article class="reveal">
                             <span class="value-number">C</span>
                             <h3>Make it understood</h3>
                             <p>Clear technical communication that turns complexity into confident decisions.</p>
@@ -128,7 +188,10 @@
                         <span>02</span>
                         <p>Selected work</p>
                     </div>
-                    <h2>Systems built around outcomes.</h2>
+                    <div class="heading-copy">
+                        <h2>Systems built around outcomes.</h2>
+                        <span class="rule" aria-hidden="true"></span>
+                    </div>
                 </div>
 
                 <div class="project-list">
@@ -138,9 +201,9 @@
                             <h3>Customer Voice Intelligence Pipeline</h3>
                             <p>An end-to-end automation pipeline that ingests live Facebook and Instagram comments through official APIs, classifies customer sentiment, and turns unstructured feedback into actionable signals for brand teams.</p>
                             <ul class="project-outcomes">
-                                <li><i class="fa-solid fa-check" aria-hidden="true"></i> Real-time social data ingestion</li>
-                                <li><i class="fa-solid fa-check" aria-hidden="true"></i> Automated sentiment classification</li>
-                                <li><i class="fa-solid fa-check" aria-hidden="true"></i> Decision-ready customer insights</li>
+                                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg> Real-time social data ingestion</li>
+                                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg> Automated sentiment classification</li>
+                                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg> Decision-ready customer insights</li>
                             </ul>
                             <div class="tech-list"><span>Python</span><span>n8n</span><span>Meta Graph API</span><span>OpenAI</span><span>NLP</span></div>
                         </div>
@@ -159,21 +222,21 @@
                             <h3>Natural-Language Meeting Agent</h3>
                             <p>An AI agent that understands meeting requests in text or voice through Telegram, extracts intent and logistics, then orchestrates calendar creation and email reminders without manual scheduling.</p>
                             <ul class="project-outcomes">
-                                <li><i class="fa-solid fa-check" aria-hidden="true"></i> Text and voice interaction</li>
-                                <li><i class="fa-solid fa-check" aria-hidden="true"></i> Intent and entity extraction</li>
-                                <li><i class="fa-solid fa-check" aria-hidden="true"></i> Calendar and email orchestration</li>
+                                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg> Text and voice interaction</li>
+                                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg> Intent and entity extraction</li>
+                                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg> Calendar and email orchestration</li>
                             </ul>
                             <div class="tech-list"><span>Python</span><span>OpenAI API</span><span>Telegram API</span><span>Google Calendar</span></div>
                         </div>
                         <div class="project-visual visual-agent" aria-label="AI meeting agent workflow illustration">
                             <div class="agent-flow" aria-hidden="true">
-                                <div class="flow-node"><i class="fa-brands fa-telegram"></i><span>Request</span></div>
+                                <div class="flow-node"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m22 2-7 20-4-9-9-4Z"/><path d="M22 2 11 13"/></svg><span>Request</span></div>
                                 <div class="flow-line"><b></b></div>
-                                <div class="flow-node node-core"><i class="fa-solid fa-wand-magic-sparkles"></i><span>Understand</span></div>
+                                <div class="flow-node node-core"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3-1.9 4.1L6 9l4.1 1.9L12 15l1.9-4.1L18 9l-4.1-1.9Z"/><path d="M5 3v4M3 5h4M19 17v4M17 19h4"/></svg><span>Understand</span></div>
                                 <div class="flow-line"><b></b></div>
-                                <div class="flow-node"><i class="fa-regular fa-calendar-check"></i><span>Schedule</span></div>
+                                <div class="flow-node"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18m-11 4 2 2 4-4"/></svg><span>Schedule</span></div>
                             </div>
-                            <div class="agent-status"><span><i></i> Intent parsed</span><span><i></i> Availability checked</span><span><i></i> Event created</span></div>
+                            <div class="agent-status"><span><i aria-hidden="true"></i> Intent parsed</span><span><i aria-hidden="true"></i> Availability checked</span><span><i aria-hidden="true"></i> Event created</span></div>
                         </div>
                     </article>
 
@@ -202,9 +265,9 @@
                             <h3>AI-Driven Occupancy Detection</h3>
                             <p>A non-intrusive machine learning system for real-time indoor occupancy estimation, enabling smarter HVAC and lighting decisions while supporting energy-efficient building operations.</p>
                             <ul class="project-outcomes">
-                                <li><i class="fa-solid fa-check" aria-hidden="true"></i> Privacy-aware sensor inputs</li>
-                                <li><i class="fa-solid fa-check" aria-hidden="true"></i> Real-time occupancy estimates</li>
-                                <li><i class="fa-solid fa-check" aria-hidden="true"></i> Energy optimization signals</li>
+                                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg> Privacy-aware sensor inputs</li>
+                                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg> Real-time occupancy estimates</li>
+                                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg> Energy optimization signals</li>
                             </ul>
                             <div class="tech-list"><span>Python</span><span>Scikit-learn</span><span>Pandas</span><span>Sensor Data</span></div>
                         </div>
@@ -226,24 +289,25 @@
                 <div class="experience-lead reveal">
                     <div class="section-kicker light"><span>03</span><p>Experience</p></div>
                     <h2>Technical depth, shaped by delivery.</h2>
+                    <span class="rule" aria-hidden="true"></span>
                     <p>My work spans production systems, analytics, and teaching. Each role sharpened a different part of how I solve problems.</p>
                 </div>
 
                 <div class="role-list">
                     <article class="role reveal">
-                        <div class="role-date">Aug 2025 / Present</div>
-                        <div class="role-body"><h3>Data Analyst & BI Specialist</h3><p class="role-company">CoderZ for Software and Training</p><p>Built a real-time attendance system with n8n and a self-hosted VPS, eliminating manual entry. Developed automated reporting workflows and advanced Power BI dashboards with DAX and data modeling.</p></div>
+                        <div class="role-date">Aug 2025 &mdash; Present</div>
+                        <div class="role-body"><h3>Data Analyst &amp; BI Specialist</h3><p class="role-company">CoderZ for Software and Training</p><p>Built a real-time attendance system with n8n and a self-hosted VPS, eliminating manual entry. Developed automated reporting workflows and advanced Power BI dashboards with DAX and data modeling.</p></div>
                     </article>
                     <article class="role reveal">
-                        <div class="role-date">Sep 2025 / Present</div>
-                        <div class="role-body"><h3>Data Science & AI Trainer</h3><p class="role-company">CoderZ for Software and Training</p><p>Trained and mentored 160+ learners across deep learning, NLP, computer vision, and business intelligence. Delivered 500+ hours of training and supervised deployable capstone projects.</p></div>
+                        <div class="role-date">Sep 2025 &mdash; Present</div>
+                        <div class="role-body"><h3>Data Science &amp; AI Trainer</h3><p class="role-company">CoderZ for Software and Training</p><p>Trained and mentored 160+ learners across deep learning, NLP, computer vision, and business intelligence. Delivered 500+ hours of training and supervised deployable capstone projects.</p></div>
                     </article>
                     <article class="role reveal">
-                        <div class="role-date">Feb 2025 / Aug 2025</div>
+                        <div class="role-date">Feb 2025 &mdash; Aug 2025</div>
                         <div class="role-body"><h3>AI Engineer</h3><p class="role-company">Petra Ride</p><p>Architected an automated social feedback system using OpenAI models and developed identity verification solutions with AWS Rekognition and face liveness detection.</p></div>
                     </article>
                     <article class="role reveal">
-                        <div class="role-date">Feb 2025 / Jun 2025</div>
+                        <div class="role-date">Feb 2025 &mdash; Jun 2025</div>
                         <div class="role-body"><h3>AI Co-Instructor</h3><p class="role-company">CoderZ for Software and Training</p><p>Co-facilitated Python and AI training, translating complex algorithms into practical exercises for multidisciplinary cohorts.</p></div>
                     </article>
                 </div>
@@ -254,14 +318,32 @@
             <div class="section-shell">
                 <div class="section-heading-row reveal">
                     <div class="section-kicker"><span>04</span><p>Expertise</p></div>
-                    <h2>A connected technical toolkit.</h2>
+                    <div class="heading-copy">
+                        <h2>A connected technical toolkit.</h2>
+                        <span class="rule" aria-hidden="true"></span>
+                    </div>
                 </div>
-                <div class="expertise-grid reveal">
-                    <article><i class="fa-solid fa-code" aria-hidden="true"></i><h3>Engineering</h3><p>Python, SQL, PyTorch, scikit-learn, PostgreSQL, Git</p></article>
-                    <article><i class="fa-solid fa-brain" aria-hidden="true"></i><h3>AI & Data Science</h3><p>Machine Learning, Deep Learning, Transformers, NLP, Computer Vision, BERT</p></article>
-                    <article><i class="fa-solid fa-gears" aria-hidden="true"></i><h3>Automation & Cloud</h3><p>n8n, Power Automate, Docker, VPS Deployment, AWS Rekognition</p></article>
-                    <article><i class="fa-solid fa-chart-simple" aria-hidden="true"></i><h3>Analytics</h3><p>Power BI, Advanced DAX, Data Modeling, Excel, Dashboard Design</p></article>
-                    <article><i class="fa-solid fa-people-group" aria-hidden="true"></i><h3>Enablement</h3><p>Technical Training, Curriculum Design, Stakeholder Communication, Public Speaking</p></article>
+                <div class="expertise-grid">
+                    <article class="reveal">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m8 6-6 6 6 6M16 6l6 6-6 6"/></svg>
+                        <h3>Engineering</h3><p>Python, SQL, PyTorch, scikit-learn, PostgreSQL, Git</p>
+                    </article>
+                    <article class="reveal">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2a4 4 0 0 0-4 4v1a3 3 0 0 0-2 5 3.5 3.5 0 0 0 1 6.5A4 4 0 0 0 11 22h1a4 4 0 0 0 4-3.5 3.5 3.5 0 0 0 1-6.5 3 3 0 0 0-2-5V6a4 4 0 0 0-4-4Z"/></svg>
+                        <h3>AI &amp; Data Science</h3><p>Machine Learning, Deep Learning, Transformers, NLP, Computer Vision, BERT</p>
+                    </article>
+                    <article class="reveal">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.6a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9c.14.36.4.66.75.85"/></svg>
+                        <h3>Automation &amp; Cloud</h3><p>n8n, Power Automate, Docker, VPS Deployment, AWS Rekognition</p>
+                    </article>
+                    <article class="reveal">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 3v18h18M7 15l4-5 3 3 5-6"/></svg>
+                        <h3>Analytics</h3><p>Power BI, Advanced DAX, Data Modeling, Excel, Dashboard Design</p>
+                    </article>
+                    <article class="reveal">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                        <h3>Enablement</h3><p>Technical Training, Curriculum Design, Stakeholder Communication, Public Speaking</p>
+                    </article>
                 </div>
             </div>
         </section>
@@ -270,7 +352,7 @@
             <div class="section-shell credentials-grid">
                 <div class="education-block reveal">
                     <div class="section-kicker"><span>05</span><p>Education</p></div>
-                    <article><span>2021 / 2025</span><h3>B.Sc. in Data Science and Artificial Intelligence</h3><p>Al Hussein Technical University, Amman</p></article>
+                    <article><span>2021 &mdash; 2025</span><h3>B.Sc. in Data Science and Artificial Intelligence</h3><p>Al Hussein Technical University, Amman</p></article>
                     <article><span>2025</span><h3>Level 5 Higher National Diploma in Computing</h3><p>Pearson BTEC / Al Hussein Technical University</p></article>
                 </div>
                 <div class="certification-block reveal">
@@ -292,20 +374,33 @@
             <div class="contact-shell reveal">
                 <p class="eyebrow">Available for ambitious work</p>
                 <h2>Have a problem worth solving?</h2>
-                <a class="contact-email" href="mailto:saif.damra@outlook.com">Let's build the answer. <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+                <span class="rule" aria-hidden="true"></span>
+                <div class="contact-actions">
+                    <a class="contact-email" href="mailto:saif.damra@outlook.com">Let's build the answer.
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                    </a>
+                </div>
                 <div class="contact-details">
-                    <a href="mailto:saif.damra@outlook.com"><i class="fa-regular fa-envelope" aria-hidden="true"></i> saif.damra@outlook.com</a>
-                    <a href="tel:+962787820746"><i class="fa-solid fa-phone" aria-hidden="true"></i> +962 7878 20 746</a>
-                    <a href="https://www.linkedin.com/in/saifdamra/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin-in" aria-hidden="true"></i> LinkedIn</a>
-                    <a href="https://github.com/Saif-Damra" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github" aria-hidden="true"></i> GitHub</a>
+                    <a href="mailto:saif.damra@outlook.com"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 6 10 7L22 6"/></svg> saif.damra@outlook.com</a>
+                    <a href="tel:+962787820746"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.362 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0 1 22 16.92Z"/></svg> +962 7878 20 746</a>
+                    <a href="https://www.linkedin.com/in/saifdamra/" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6ZM2 9h4v12H2zM4 6a2 2 0 1 0 0-4 2 2 0 0 0 0 4Z"/></svg> LinkedIn</a>
+                    <a href="https://github.com/Saif-Damra" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 19c-4.3 1.4-4.3-2.5-6-3m12 5v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6a4.6 4.6 0 0 0-1.3-3.2 4.2 4.2 0 0 0-.1-3.2s-1.1-.3-3.5 1.3a12.3 12.3 0 0 0-6.2 0C6.5 2.8 5.4 3.1 5.4 3.1a4.2 4.2 0 0 0-.1 3.2A4.6 4.6 0 0 0 4 9.5c0 4.6 2.7 5.7 5.5 6-.6.6-.6 1.2-.5 2V21"/></svg> GitHub</a>
+                    <a href="assets/Saif-Damra-CV.pdf" download="Saif-Damra-CV.pdf"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12M6 11l6 6 6-6M5 21h14"/></svg> Download CV</a>
                 </div>
             </div>
         </section>
     </main>
 
     <footer class="footer">
-        <a class="brand footer-brand" href="#home"><span class="brand-mark">SD</span><span class="brand-name">Saif Damra</span></a>
-        <p>AI Engineer & Data Scientist / Amman, Jordan</p>
+        <a class="brand footer-brand" href="#home" aria-label="SAIF, home">
+            <span class="brand-mark">
+                <svg viewBox="442.5 317.25 314.5 115.75" role="img" aria-hidden="true" focusable="false">
+                    <path class="ink" fill="currentColor" d="M 484.292969 432.480469 C 475.113281 432.480469 467.199219 431.003906 460.550781 428.046875 C 454.007812 424.988281 447.996094 420.398438 442.507812 414.277344 L 458.652344 398.292969 C 462.238281 402.40625 466.195312 405.625 470.523438 407.945312 C 474.957031 410.164062 480.074219 411.269531 485.878906 411.269531 C 491.152344 411.269531 495.214844 410.320312 498.066406 408.421875 C 501.019531 406.523438 502.496094 403.882812 502.496094 400.507812 C 502.496094 397.449219 501.546875 394.96875 499.648438 393.066406 C 497.75 391.167969 495.214844 389.535156 492.050781 388.160156 C 488.988281 386.789062 485.5625 385.46875 481.761719 384.203125 C 478.070312 382.9375 474.375 381.511719 470.683594 379.929688 C 466.988281 378.242188 463.558594 376.183594 460.394531 373.757812 C 457.332031 371.226562 454.855469 368.113281 452.953125 364.417969 C 451.054688 360.621094 450.105469 355.871094 450.105469 350.171875 C 450.105469 343.3125 451.742188 337.40625 455.011719 332.445312 C 458.386719 327.484375 463.03125 323.738281 468.941406 321.207031 C 474.851562 318.570312 481.65625 317.25 489.359375 317.25 C 497.167969 317.25 504.289062 318.621094 510.726562 321.367188 C 517.269531 324.109375 522.652344 327.855469 526.871094 332.605469 L 510.726562 348.589844 C 507.351562 345.109375 503.921875 342.523438 500.4375 340.835938 C 497.0625 339.144531 493.210938 338.300781 488.882812 338.300781 C 484.558594 338.300781 481.128906 339.144531 478.597656 340.835938 C 476.0625 342.417969 474.796875 344.738281 474.796875 347.800781 C 474.796875 350.648438 475.746094 352.96875 477.644531 354.761719 C 479.546875 356.453125 482.027344 357.929688 485.085938 359.195312 C 488.25 360.460938 491.679688 361.726562 495.375 362.996094 C 499.171875 364.261719 502.917969 365.738281 506.613281 367.425781 C 510.304688 369.113281 513.683594 371.277344 516.742188 373.914062 C 519.910156 376.449219 522.441406 379.71875 524.339844 383.730469 C 526.238281 387.632812 527.1875 392.488281 527.1875 398.292969 C 527.1875 408.949219 523.390625 417.339844 515.792969 423.457031 C 508.195312 429.472656 497.695312 432.480469 484.292969 432.480469 Z M 679.445312 430.738281 L 679.445312 318.992188 L 704.296875 318.992188 L 704.296875 430.738281 Z M 698.441406 386.894531 L 698.441406 365.527344 L 754.3125 365.527344 L 754.3125 386.894531 Z M 698.441406 340.359375 L 698.441406 318.992188 L 756.847656 318.992188 L 756.847656 340.359375 Z M 698.441406 340.359375 " />
+                    <path class="ai" fill="currentColor" d="M 531.382812 430.738281 L 575.703125 318.992188 L 598.179688 318.992188 L 642.023438 430.738281 L 615.75 430.738281 L 582.191406 337.984375 L 591.214844 337.984375 L 557.183594 430.738281 Z M 556.550781 410.480469 L 556.550781 390.21875 L 617.492188 390.21875 L 617.492188 410.480469 Z M 639.011719 430.738281 L 639.011719 318.992188 L 663.859375 318.992188 L 663.859375 430.738281 Z M 639.011719 430.738281 " />
+                </svg>
+            </span>
+        </a>
+        <p>AI Engineer &amp; Data Scientist &middot; Amman, Jordan</p>
         <p>&copy; <span id="year">2026</span> Saif Damra</p>
     </footer>
 

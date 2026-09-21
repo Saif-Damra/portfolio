@@ -1,0 +1,5 @@
+# Local recordings / scratch files — not part of the site
+*.mp4
+
+# Brand guideline reference pages — not used by index.html, kept local only
+saif-brand-guidelines-svg/
