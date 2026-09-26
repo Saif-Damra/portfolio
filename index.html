@@ -231,7 +231,31 @@
                 <div class="project-list">
                     <article class="project reveal">
                         <div class="project-copy">
-                            <div class="project-meta"><span>AI automation / NLP</span><span>01</span></div>
+                            <div class="project-meta"><span>RAG / Bilingual NLP</span><span>01</span></div>
+                            <h3>Bilingual Course Assistant</h3>
+                            <p>A retrieval-augmented chatbot for a training company that answers customer questions about course content, duration, audience, and price in Arabic or English, strictly from the company's own course data. When the answer isn't there, it says so and hands off to the sales team instead of guessing.</p>
+                            <ul class="project-outcomes">
+                                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg> Hybrid dense + BM25 search with metadata filters</li>
+                                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg> Grounded answers that never invent a price</li>
+                                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg> Benchmark-driven evaluation in both languages</li>
+                            </ul>
+                            <div class="tech-list"><span>Python</span><span>LlamaIndex</span><span>Qdrant</span><span>Claude / OpenAI</span><span>FastAPI</span><span>Docker</span></div>
+                        </div>
+                        <div class="project-visual visual-rag" aria-label="Bilingual course assistant chat illustration">
+                            <div class="visual-label">Course assistant <span>Grounded</span></div>
+                            <div class="chat-thread" aria-hidden="true">
+                                <p class="chat-msg msg-user" dir="rtl" lang="ar">ما هي دورات الأمن السيبراني المتاحة؟</p>
+                                <p class="chat-msg msg-bot" dir="rtl" lang="ar">لدينا دورتان في فئة الأمن السيبراني. هل تود معرفة المدة والسعر؟<em dir="ltr">Source: course catalog</em></p>
+                                <p class="chat-msg msg-user">Do you offer a pilot license course?</p>
+                                <p class="chat-msg msg-bot">That isn't in our course data. Our sales team can help you directly.</p>
+                            </div>
+                            <div class="rag-stats"><div><strong>100%</strong><span>Top-5 hit rate</span></div><div><strong>100%</strong><span>Correct refusals</span></div><div><strong>29</strong><span>AR/EN test Qs</span></div></div>
+                        </div>
+                    </article>
+
+                    <article class="project project-reverse reveal">
+                        <div class="project-copy">
+                            <div class="project-meta"><span>AI automation / NLP</span><span>02</span></div>
                             <h3>Customer Voice Intelligence Pipeline</h3>
                             <p>An end-to-end automation pipeline that ingests live Facebook and Instagram comments through official APIs, classifies customer sentiment, and turns unstructured feedback into actionable signals for brand teams.</p>
                             <ul class="project-outcomes">
@@ -250,9 +274,9 @@
                         </div>
                     </article>
 
-                    <article class="project project-reverse reveal">
+                    <article class="project reveal">
                         <div class="project-copy">
-                            <div class="project-meta"><span>AI agent / Automation</span><span>02</span></div>
+                            <div class="project-meta"><span>AI agent / Automation</span><span>03</span></div>
                             <h3>Natural-Language Meeting Agent</h3>
                             <p>An AI agent that understands meeting requests in text or voice through Telegram, extracts intent and logistics, then orchestrates calendar creation and email reminders without manual scheduling.</p>
                             <ul class="project-outcomes">
@@ -274,9 +298,9 @@
                         </div>
                     </article>
 
-                    <article class="project reveal">
+                    <article class="project project-reverse reveal">
                         <div class="project-copy">
-                            <div class="project-meta"><span>Arabic NLP / Deep learning</span><span>03</span></div>
+                            <div class="project-meta"><span>Arabic NLP / Deep learning</span><span>04</span></div>
                             <h3>Arabic News Classification</h3>
                             <p>A refined Arabic-language NLP pipeline using BERT, focused on robust preprocessing and feature engineering to classify news content with strong performance across categories.</p>
                             <div class="project-metric"><strong>95%</strong><span>classification accuracy</span></div>
@@ -293,9 +317,9 @@
                         </div>
                     </article>
 
-                    <article class="project project-reverse reveal">
+                    <article class="project reveal">
                         <div class="project-copy">
-                            <div class="project-meta"><span>Machine learning / Smart spaces</span><span>04</span></div>
+                            <div class="project-meta"><span>Machine learning / Smart spaces</span><span>05</span></div>
                             <h3>AI-Driven Occupancy Detection</h3>
                             <p>A non-intrusive machine learning system for real-time indoor occupancy estimation, enabling smarter HVAC and lighting decisions while supporting energy-efficient building operations.</p>
                             <ul class="project-outcomes">
